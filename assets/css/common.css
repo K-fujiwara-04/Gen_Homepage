@@ -1,0 +1,826 @@
+@charset "utf-8";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* BASE STYLE
+--------------------------------------------------*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #707070;
+    font-family: クレー, YuGothic, 'Yu Gothic', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'ヒラギノ角ゴシック', 'Hiragino Sans', 'メイリオ', Meiryo, sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+.inner {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+iframe {
+    vertical-align: middle;
+}
+
+.ma48auto {
+    margin: 48px auto;
+}
+
+.mb48 {
+    margin-bottom: 48px;
+}
+/* フレックス
+--------------------------------------------------*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.is_between {
+    justify-content: space-between;
+}
+
+.flex_end {
+    justify-content: flex-end;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.align_end {
+    align-items: flex-end;
+}
+
+/*フォントサイズ*/
+.fz18 {
+    font-size: 1.8rem;
+}
+
+/*ホバー*/
+.gnav ul ul li a:hover {
+    opacity: .7;
+}
+
+.english_wp a:hover {
+    opacity: .7;
+}
+
+/* タイトルPC
+--------------------------------------------------*/
+.section .ttl .section_ttl {
+    width: 10%;
+    margin: 0 auto;
+}
+
+.topmv {
+    background: url(../image/top/mv.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 880px;
+}
+
+/* ヘッダー PC
+--------------------------------------------------*/
+.header_wp {
+    width: 100%;
+    position: fixed;
+    background: #333;
+    color: #fff;
+    padding: 0 40px;
+    opacity: .8;
+    z-index: 9999;
+}
+
+.header_logo {
+    width: 12%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.header_logo img {
+    vertical-align: baseline;
+}
+
+.header_logo_wp {
+    width: 40%;
+}
+
+.header_logo_wp h2 {
+    font-size: 2.4rem;
+    font-family: Baskerville;
+}
+
+.header_logo_wp h2 a {
+    opacity: .8;
+    color: #fff;
+}
+
+.gnav ul li {
+    padding: 5% 0 5% 2rem;
+}
+
+.gnav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/*英語*/
+.english {
+    color: #FFFF00;
+    line-height: .5;
+}
+
+.sp_english {
+    display: none;
+}
+
+.english_wp {
+    line-height: 1;
+    text-align: center;
+}
+
+#nav-drawer {
+    display: none;
+}
+
+.catch_wp {
+    padding: 8% 0 9% 0;
+}
+
+.catch_wp p {
+    text-align: center;
+    line-height: 2.1;
+    font-size: 1.5vw;
+    padding-top: 2%;
+}
+
+.br_sp {
+    display: none;
+}
+
+.br_pc {
+    display: block;
+}
+
+.catch_copy {
+    font-size: 2vw;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.v_line {
+    width: .5px;
+    height: 8vw;
+    background-color: #2699D6;
+    margin: 0 auto;
+    margin-bottom: 7%;
+}
+
+/*セカンドビューの背景*/
+.second_bg {
+    position: relative;
+}
+
+.second_bg_pc {
+    display: block !important;
+}
+
+.second_bg_sp {
+    display: none !important;
+}
+
+.second_catch {
+    position: absolute;
+    top: 32px;
+    left: 10%;
+    line-height: 2;
+    font-size: 1.3vw;
+}
+
+.second_catch {
+    line-height: 2.5;
+}
+
+/* お部屋紹介PC
+--------------------------------------------------*/
+.section {
+    text-align: center;
+    padding-top: 7%;
+}
+
+.ttl {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ttl_font {
+    font-size: 1.8rem;
+    padding: 8px 0 32px 0;
+}
+
+.access_ttl_font {
+    font-size: 1.8rem;
+    padding-top: 1%;
+}
+
+.ttl_font::before,
+.ttl_font::after {
+    content: "";
+    display: inline-block;
+    width: 68px;
+    height: .5px;
+    margin: 0 3rem;
+    background-color: #707070;
+    vertical-align: middle;
+}
+
+/*ボタンPC*/
+.btn {
+    background: #2699D6;
+    width: 18%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.btn a {
+    display: block;
+    padding: 1.5rem 0;
+    color: #fff;
+    opacity: .7;
+}
+
+.btn a:hover {
+    opacity: 1;
+}
+
+/* 部屋スライドPC
+--------------------------------------------------*/
+.slick-slide {
+    position: relative;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 49vw;
+    object-fit: cover;
+
+}
+
+.slick-slide .caption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    font-size: 12px;
+    opacity: 0;
+    transition: .4s ease;
+}
+
+.slick-current .caption {
+    opacity: 1;
+    transition-delay: .5s;
+}
+
+/* お知らせPC
+--------------------------------------------------*/
+.news {
+    background: #F7F7F7;
+}
+
+/*フェイスブックPC*/
+.facebook-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.facebook-wrapper > .fb-page {
+    width: 100%;
+}
+
+.facebook-wrapper > .fb-page > span,
+.facebook-wrapper iframe {
+    width: 100% !important;
+}
+
+.facebook-wrapper iframe {
+    height: 48vh;
+}
+
+/* アクセスPC
+--------------------------------------------------*/
+.access .ttl figcaption {
+    font-size: 1.8rem;
+}
+
+.ribbon {
+    width: 25%;
+    margin: 0 auto;
+    padding-bottom: 4%;
+}
+
+.access_address {
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 2% 0 3% 0;
+}
+
+/*グーグルマップPC*/
+#map_canvas {
+    position: relative;
+    padding: 0 0 56%;
+    height: 0;
+    overflow: hidden;
+}
+
+#map_canvas iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 80% !important;
+}
+
+/*フッターPC
+--------------------------------------------------*/
+.footer {
+    background: #F0F0F0;
+    padding-bottom: 20px;
+}
+
+.footer_logo_wp {
+    padding: 37px 0 16px 0;
+}
+
+.footer_logo_wp p {
+    font-size: 2.4rem;
+    font-family: Baskerville;
+    opacity: .7;
+}
+
+.footer_logo_wp h2 a {
+    opacity: .8;
+    color: #333;
+}
+
+.footer_logo {
+    width: 8%;
+    -webkit-transform: translateY(9px) rotate(-9deg);
+    -ms-transform: translateY(9px) rotate(-9deg);
+    transform: translateY(9px) rotate(-9deg);
+}
+
+.footer_address a {
+    color: #707070;
+}
+
+.footer,
+.copyright {
+    font-size: 1.5vw;
+}
+
+.english_address {
+    align-items: flex-end;
+}
+
+.footer_sns_wp {
+    width: 100px;
+}
+
+.f_logo_Black {
+    margin-right: 20px;
+    width: 40px;
+}
+
+.insta_logo_black {
+    width: 40px;
+}
+
+/*コピーライト*/
+.copyright {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*ページトップPC*/
+.footer_wrap {
+    position: relative;
+}
+
+#page_top a {
+    display: block;
+}
+
+#page_top a::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f062';
+    font-size: 3rem;
+    color: #2699d6;
+    position: absolute;
+    top: 3%;
+    right: 50%;
+    left: 45%;
+}
+
+/*ハンバーガーメニューPC*/
+
+.navi {
+    display: none;
+}
+
+.el_humburger {
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+
+    .inner {
+        padding: 0 2%;
+    }
+
+    .ttl_font {
+        padding-bottom: 40px;
+        font-size: 16px;
+    }
+
+    .ttl_font::before,
+    .ttl_font::after {
+        width: 50px;
+        height: .5px;
+    }
+
+    .topmv {
+        height: 580px;
+    }
+
+    /* タイトルSP
+    --------------------------------------------------*/
+    .section .ttl .section_ttl {
+        width: 36%;
+    }
+
+    /*ヘッダーSP
+    --------------------------------------------------*/
+    .gnav {
+        display: none;
+    }
+    
+/*    英語*/
+    .sp_english {
+        display: block;
+        font-size: 12px;
+        margin-right: 5px;
+    }
+    
+/*    英語フォントサイズ*/
+    .fz12 {
+        font-size: 12px;
+    }
+
+    .header_logo_wp {
+        padding: 10px 0;
+        width: 76%;
+    }
+
+    .header_logo_wp h2 {
+        font-size: 2rem;
+    }
+
+    .header_logo {
+        width: 17%;
+    }
+
+    .header_logo img {
+        vertical-align: baseline;
+    }
+
+    .header_wp {
+        padding: 0;
+    }
+
+    .catch_copy {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .catch_wp {
+        padding: 56px 0;
+    }
+
+    .br_sp {
+        display: block;
+    }
+
+    .br_pc {
+        display: none;
+    }
+
+    .catch_wp p {
+        text-align: center;
+        line-height: 2.4;
+        font-size: 16px;
+        padding-top: 2%;
+    }
+
+    .second_catch {
+        left: 9%;
+        font-size: 16px;
+        top: 8%;
+        text-shadow: -1px 1px #fbfbfb;
+    }
+
+    /*セカンドビューの背景*/
+    .second_bg_pc {
+        display: none !important;
+    }
+
+    .second_bg_sp {
+        display: block !important;
+/*        height: 548px;*/
+/*        width: 50%;*/
+/*        height: 100%;*/
+    }
+
+
+    /* お部屋紹介SP
+    --------------------------------------------------*/
+    /*ボタンsp*/
+    .btn {
+        width: 96%;
+    }
+
+    .btn a {
+        font-size: 16px;
+    }
+
+    .section {
+        padding-top: 56px;
+    }
+    
+    .roombtn {
+        margin: 56px auto;
+    }
+
+    /* お知らせSP
+    --------------------------------------------------*/
+    /*フェイスブックSP*/
+    .facebook-wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* アクセスSP
+    --------------------------------------------------*/
+    .access .ttl figcaption {
+        font-size: 16px;
+    }
+
+    .ribbon {
+        width: 40%;
+        margin: 0 auto;
+        padding-bottom: 32px;
+    }
+    
+    .access_address {
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.8;
+/*        padding: 2% 0 3% 0;*/
+    }
+    
+    .contactbtno2_sp {
+        margin-bottom: 56px;
+    }
+
+    /*グーグルマップSP*/
+    #map_canvas {
+        padding: 0 0 93%;
+/*        margin-bottom: 10px;*/
+    }
+    
+    .footer_sns_wp {
+        margin: 0 auto;
+        margin-top: 48px;
+    }
+
+    /*フッターSP
+    --------------------------------------------------*/
+    .footer_logo {
+        width: 18%;
+        opacity: .8;
+        padding-bottom: 10px;
+    }
+    
+    .footer_logotx a {
+        font-size: 24px
+    }
+
+    .footer_address {
+        font-size: 16px;
+    }
+
+    .english_address {
+        font-size: 16px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    /*ハンバーガーメニューSP*/
+    .el_humburger {
+        display: block;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+    
+/*    ✕印*/
+    .el_humburger {
+        right: 0;
+        top: 0;
+        padding-top: 0px;
+        z-index: 20;
+        color: #000;
+        text-align: center;
+    }
+    /*    白の三本線*/
+    .el_humburger span.el_humburger_bar {
+        left: 0;
+        top: 0;
+        background: #fff;
+    }
+
+    .el_humburger_wrapper {
+        width: 30px;
+        display: inline-block;
+        padding-top: 10px;
+    }
+
+    .el_humburger_text {
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        font-family: "游ゴシック Medium", YuGothic, "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+    }
+    
+    .el_humburger_text.el_humburger_text__close {
+        display: none;
+    }
+    
+    .el_humburger span.el_humburger_bar {
+        display: block;
+        width: 100%;
+        margin: 0 auto 8px;
+        height: 2px;
+        background: #fff;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
+
+    .el_humburger span.el_humburger_bar:last-child {
+        margin-bottom: 0;
+    }
+    
+    .el_humburger_text svg path {
+        -webkit-transition: all 200ms cubic-bezier(0.16, 0.52, 0.25, 1);
+        -o-transition: all 200ms cubic-bezier(0.16, 0.52, 0.25, 1);
+        transition: all 200ms cubic-bezier(0.16, 0.52, 0.25, 1);
+        fill: #000;
+    }
+    
+    .navi {
+        display: block;
+        position: fixed;
+        right: 0;
+/*        height: 100%;*/
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 0;
+        z-index: 3;
+/*        文字の余白*/
+        padding-top: 300px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 600ms ease-out;
+        -o-transition: all 600ms ease-out;
+        transition: all 600ms ease-out;
+        overflow: hidden;
+    }
+    
+    /*    背景*/
+    .js_humburgerOpen .navi {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .navi_item {
+        margin-bottom: 28px;
+        font-size: 20px;
+        font-family: "Marcellus", serif !important;
+        white-space: nowrap;
+    }
+
+    .navi_item.op_innerLink {
+        cursor: pointer;
+    }
+    
+    .js_humburgerOpen .el_humburger_text.el_humburger_text__menu {
+        display: none;
+    }
+
+    .js_humburgerOpen .el_humburger_text.el_humburger_text__close {
+        display: block;
+    }
+
+    .js_humburgerOpen .el_humburger span.el_humburger_bar {
+        background: #000;
+/*        z-index: 100 !important;*/
+    }
+
+    .js_humburgerOpen .el_humburger span.el_humburger_bar.top {
+        -webkit-transform: translateY(9px) rotate(-45deg);
+        -ms-transform: translateY(9px) rotate(-45deg);
+        transform: translateY(9px) rotate(-45deg);
+    }
+
+    .js_humburgerOpen .el_humburger span.el_humburger_bar.middle {
+        opacity: 0;
+    }
+
+    .js_humburgerOpen .el_humburger span.el_humburger_bar.bottom {
+        -webkit-transform: translateY(-11px) rotate(45deg);
+        -ms-transform: translateY(-11px) rotate(45deg);
+        transform: translateY(-11px) rotate(45deg);
+    }
+
+    .el_humburgerButton.el_humburgerButton__close {
+        top: 2%;
+        right: 2%;
+    }
+
+    .el_humburgerButton__close span.el_humburger_bar {
+        display: block;
+        width: 35px;
+        margin: 0 auto;
+        height: 4px;
+        background: #000;
+        z-index: 2;
+    }
+
+    .el_humburgerButton__close span.el_humburger_bar.top {
+        -webkit-transform: translateY(5px) rotate(-45deg);
+        -ms-transform: translateY(5px) rotate(-45deg);
+        transform: translateY(5px) rotate(-45deg);
+    }
+
+    .el_humburgerButton__close span.el_humburger_bar.bottom {
+        -webkit-transform: translateY(-6px) rotate(45deg);
+        -ms-transform: translateY(-6px) rotate(45deg);
+        transform: translateY(-6px) rotate(45deg);
+    }
+
+    #factory .el_humburger {
+        display: none;
+    }
+
+    .js_humburgerOpen .el_humburger_text svg path {
+        fill: #000;
+    }
+
+}

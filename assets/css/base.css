@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+/* 基本指定PC
+--------------------------------------------------*/
+*,*::before,*::after {box-sizing: border-box;margin: 0;padding: 0;}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #707070;
+    font-family: クレー, YuGothic, 'Yu Gothic', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'ヒラギノ角ゴシック', 'Hiragino Sans', 'メイリオ', Meiryo, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.8;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+.inner {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.section {
+    text-align: center;
+    padding: 70px 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+iframe {
+    vertical-align: middle;
+}
+
+/* マージン指定
+--------------------------------------------------*/
+.ma48auto {
+    margin: 48px auto;
+}
+
+.mb48 {
+    margin-bottom: 48px;
+}
+
+/* フレックス
+--------------------------------------------------*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.is_between {
+    justify-content: space-between;
+}
+
+.flex_end {
+    justify-content: flex-end;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.align_end {
+    align-items: flex-end;
+}
+
+/* フォントサイズ
+--------------------------------------------------*/
+.fz18 {
+    font-size: 1.8rem;
+}
+
+/* ホバー指定
+--------------------------------------------------*/
+.gnav ul ul li a:hover {
+    opacity: .7;
+}
+
+.english_wp a:hover {
+    opacity: .7;
+}
+
+/* 段落指定
+--------------------------------------------------*/
+.br_sp {
+    display: none;
+}
+
+.br_pc {
+    display: block;
+}
+
+/* ボタンPC
+--------------------------------------------------*/
+.btn {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2699d6+0,7db9e8+100 */
+    background: #2699d6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #2699d6 0%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #2699d6 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #2699d6 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2699d6', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0px auto 28px auto;
+}
+
+.btn a {
+    display: block;
+    padding: 15px 0;
+    color: #fff;
+    opacity: .7;
+}
+
+.btn a:hover {
+    opacity: 1;
+}
+
+.contactbtno2_sp {
+    margin-bottom: 56px;
+}
+
+/* アクセントPC
+--------------------------------------------------*/
+.v_line {
+    display: block;
+    width: 4vw;
+    height: .5px;
+    background-color: #2699D6;
+    margin: 0 auto;
+    margin: 32px auto 48px;
+}
+
+/*メインタイトルPC*/
+.mv_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* 下層ページh3タイトルPC
+--------------------------------------------------*/
+.ttl {
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+/*ルームタイプPC*/
+.roomtype .ttl:after {
+    display: block;
+    content: 'お部屋タイプ';
+    font-size: 1.8rem;
+}
+
+/*お知らせPC*/
+.news .ttl:after {
+    display: block;
+    content: 'お知らせ';
+    font-size: 1.8rem;
+}
+
+/*アクセスPC*/
+.access .ttl:after {
+    display: block;
+    content: 'アクセス';
+    font-size: 1.8rem;
+}
+
+/*コンタクトPC*/
+.reservation .ttl:after {
+    display: block;
+    content: '予約フォーム';
+    font-size: 1.8rem;
+}
+
+.charter .ttl:after {
+    display: block;
+    content: 'All rooms reserved';
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width:767px) {
+    
+    /* 共通指定SP
+    --------------------------------------------------*/
+    .inner {
+        padding: 0 2%;
+    }
+    
+    .section {
+        padding-top: 56px;
+    }
+    
+    /* 段落指定SP
+    --------------------------------------------------*/
+    .br_sp {
+        display: block !important;
+    }
+
+    .br_pc {
+        display: none !important;
+    }
+    
+    /* ボタンsp
+    --------------------------------------------------*/
+    .btn {
+        width: 100%;
+    }
+
+    .btn a {
+        font-size: 1.6rem;
+    }
+    
+    /* 下層ページh3タイトルSP
+    --------------------------------------------------*/
+    .ttl {
+        margin-bottom: 32px;
+    }
+    
+    /* アクセントSP
+    --------------------------------------------------*/
+    .v_line {
+        display: block;
+        width: 8vw;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+}
