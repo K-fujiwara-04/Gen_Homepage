@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+/*メインビジュアルPC*/
+.mv_second {
+    position: relative;
+    background-image: url(../image/room/mv.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 530px;
+}
+
+.room_cont {
+    display: flex;
+    margin: 0 0 100px 4px;
+}
+
+.room_photo {
+    width: 50%;
+}
+
+/*部屋紹介PC*/
+.room_text_cont {
+    width: 46%;
+    margin: 0 40px;
+}
+
+/*部屋紹介タイトルPC*/
+.roomtype_ttl {
+    font-size: 2.4rem;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.dormitory:after {
+    content: 'Mixed dormitory ( Bunk bed )';
+    font-family: 'ヒラギノ明朝 Pro';
+    font-size: 1.6rem;
+    display: block;
+    margin-left: 3px;
+    margin-bottom: 12px;
+}
+
+.private_bunk:after {
+    content: 'Private room ( 1 Bunk bed )';
+    font-family: 'ヒラギノ明朝 Pro';
+    font-size: 1.6rem;
+    display: block;
+    margin-left: 3px;
+    margin-bottom: 12px;
+}
+
+.private_double:after {
+    content: 'Private room ( 1 double bed )';
+    font-family: 'ヒラギノ明朝 Pro';
+    font-size: 1.6rem;
+    display: block;
+    margin-left: 3px;
+    margin-bottom: 12px;
+}
+
+/*本文テキストPC*/
+.room_text {
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+/*料金価格PC*/
+.price {
+    font-size: 1.5rem;
+    border: 1px solid #707070;
+    width: 80%;
+    padding: 15px 0 15px 50px;
+    text-align: left;
+}
+
+/*貸し切りpc*/
+.charter_price {
+    font-size: 1.5rem;
+    border: 1px solid #707070;
+    width: 40%;
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+.charter_tx {
+    width: 50%;
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+.charter {
+    font-size: 1.6rem;
+    margin: 32px auto 80px;
+    border-top: 1px dotted #707070;
+    border-bottom: 1px dotted #707070;
+    padding: 56px 0;
+}
+
+.room_number2 {
+    flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+}
+
+.roomtype .btn {
+    margin: 0 auto 70px auto;
+}
+
+/* 注意事項セクションPC
+--------------------------------------------------*/
+.notes {
+    color: #fff;
+}
+
+/*背景PC*/
+.notes_bg {
+    background-image: url(../image/room/notes_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.notes_cont_allwrap {
+    display: flex;
+    padding: 70px 0;
+}
+
+.notes_cont_wrap01,
+notes_cont_wrap02 {
+    width: 50%;
+}
+
+/*タイトルPC*/
+.notes h3 {
+    font-size: 2.4rem;
+}
+
+.notes h3:before {
+    content: '';
+    border-left: 1px solid #fff;
+    margin-right: 10px;
+}
+
+/*本文PC*/
+.notes p {
+    font-size: 1.5rem;
+}
+
+/*施設設備PC*/
+.facility_equipment {
+    padding-bottom: 40px;
+}
+
+/*注意事項PC*/
+.notes_tx {
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width:767px) {
+
+    .notes_cont_allwrap {
+        display: block;
+        padding: 40px 0;
+    }
+
+    /*    メインタイトルSP*/
+    .mv_second h2 {
+        font-size: 3rem;
+    }
+
+    .room_cont {
+        flex-wrap: wrap;
+        margin: 0 0 48px 0;
+    }
+
+    .room_photo {
+        width: 100%;
+    }
+    
+    /*部屋紹介タイトルPC*/
+    .roomtype_ttl {
+        text-align: center;
+    }
+
+    .room_text_cont {
+        width: 100%;
+        margin: 0;
+        padding-top: 10px;
+    }
+    
+    /*料金価格SP*/
+    .price {
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .notes_cont_wrap01,
+    notes_cont_wrap02 {
+        width: 100%;
+    }
+
+    /*タイトルSP*/
+    .notes h3 {
+        font-size: 2.4rem;
+    }
+
+    .notes h3:before {
+        content: '';
+        margin-right: 10px;
+    }
+
+    /*本文PC*/
+    .notes p {
+        font-size: 1.5rem;
+    }
+    
+    /*貸し切りsp*/
+    .charter_price {
+        width: 100%;
+    }
+
+    .charter_tx {
+        width:  100%;
+        margin-bottom: 24px;
+    }
+
+    .charter {
+        margin: 0;
+        padding: 56px 0 32px 0;
+    }
+
+    /*施設設備SP*/
+    .facility_equipment {
+        padding-bottom: 20px;
+    }
+
+    .business_hours {
+        padding-bottom: 20px;
+    }
+
+    .notes_tx {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    /*メインビジュアルSP*/
+    .mv_second {
+        background-position: right bottom;
+        height: 350px;
+    }
+    
+    /*注意事項背景SP*/
+    .notes_bg {
+        background-position: right center;
+    }
+}
+
