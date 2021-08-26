@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/*メインビジュアルPC*/
+.mv_second {
+    position: relative;
+    background-image: url(../image/contact/mv.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 530px;
+}
+
+/* フォームの説明PC
+--------------------------------------------------*/
+.reservation_description_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.reservation_description_ja {
+    width: 48%;
+}
+
+.reservation_description_en {
+    width: 48%;
+}
+
+/* グーグルフォームPC
+--------------------------------------------------*/
+iframe[src^="https://docs.google.com/forms/d/e"]{
+    width:100%;
+}
+
+/* 注意事項セクションPC
+--------------------------------------------------*/
+.notes {
+    color: #fff;
+}
+
+/*背景PC*/
+.notes_bg {
+    background-image: url(../image/room/notes_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.notes_cont_allwrap {
+    display: flex;
+    padding: 70px 0;
+}
+
+.notes_cont_wrap01,
+notes_cont_wrap02 {
+    width: 50%;
+}
+
+/*タイトルPC*/
+.notes h3 {
+    font-size: 2.4rem;
+}
+
+.notes h3:before {
+    content: '';
+    border-left: 1px solid #fff;
+    margin-right: 10px;
+}
+
+/*本文PC*/
+.notes p {
+    font-size: 1.5rem;
+}
+
+/*施設設備PC*/
+.facility_equipment {
+    padding-bottom: 40px;
+}
+
+/*注意事項PC*/
+.notes_tx {
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width:767px) {
+    
+    .notes_cont_wrap01,
+    notes_cont_wrap02 {
+        width: 100%;
+    }
+
+    .notes_cont_allwrap {
+        display: block;
+        padding: 40px 0;
+    }
+
+    /*    メインタイトルSP*/
+    .mv_second h2 {
+        font-size: 3rem;
+    }
+
+    /*タイトルSP*/
+    .notes h3 {
+        font-size: 2.4rem;
+    }
+
+    .notes h3:before {
+        content: '';
+/*        border-left: 1px solid #fff;*/
+        margin-right: 10px;
+    }
+    
+    /* フォームの説明SP
+    --------------------------------------------------*/
+    .reservation_description_ja {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    
+    .reservation_description_en {
+        width: 100%;
+    }
+
+    /*本文PC*/
+    .notes p {
+        font-size: 1.5rem;
+    }
+
+    /*施設設備SP*/
+    .facility_equipment {
+        padding-bottom: 20px;
+    }
+
+    .business_hours {
+        padding-bottom: 20px;
+    }
+
+    .notes_tx {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    
+/*    セクション*/
+    .reservation {
+        padding-bottom: 56px;
+    }
+    
+    /*メインビジュアルSP*/
+    .mv_second {
+        background-position: right bottom;
+        height: 350px;
+    }
+    /*注意事項背景SP*/
+    .notes_bg {
+        background-position: right center;
+    }
+}
+

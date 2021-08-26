@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+/* ヘッダー PC
+--------------------------------------------------*/
+.header_wp {
+    width: 100%;
+    position: fixed;
+    color: #fff;
+    padding: 0 72px;
+    opacity: .8;
+    z-index: 9999;
+    justify-content: space-between;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#707070+0,707070+100&1+33,0.7+100 */
+    background: -moz-linear-gradient(top,  rgba(112,112,112,1) 0%, rgba(112,112,112,1) 33%, rgba(112,112,112,0.7) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(112,112,112,1) 0%,rgba(112,112,112,1) 33%,rgba(112,112,112,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(112,112,112,1) 0%,rgba(112,112,112,1) 33%,rgba(112,112,112,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#707070', endColorstr='#b3707070',GradientType=0 ); /* IE6-9 */
+}
+
+.header_logo {
+    width: 50px;
+    margin: 15px 5px 15px 0px;
+}
+
+.header_logo img {
+    vertical-align: baseline;
+}
+
+.header_logo_wp {
+    width: 40%;
+    padding-left: 10px;
+}
+
+.header_logo_wp_right {
+    display: none;
+}
+
+.header_logo_wp h2 {
+    font-family: Baskerville;
+}
+
+.header_logo_wp h2 a {
+    opacity: .8;
+    color: #fff;
+}
+
+.gnav ul li {
+    padding: 15px;
+}
+
+.gnav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+/*ENGLISH*/
+.navi_inner .english a {
+    color: #FFFF00;
+}
+
+/* ENGLISH
+--------------------------------------------------*/
+.english {
+    color: #FFFF00;
+    line-height: .5;
+}
+
+.english_wp {
+    line-height: 0.7;
+    text-align: center;
+}
+
+#nav-drawer {
+    display: none;
+}
+
+/*フッターPC
+--------------------------------------------------*/
+.footer {
+    background: #F0F0F0;
+    padding-bottom: 68px;
+}
+
+.footer_logo_wp {
+    display: flex;
+    align-items: flex-end;
+    padding: 37px 0 26px 0;
+    margin-left: -15px;
+}
+
+.footer_logo_wp p {
+    font-size: 2.4rem;
+    font-family: Baskerville;
+    opacity: .7;
+}
+
+.footer_logo_wp h2 a {
+    opacity: .8;
+    color: #333;
+}
+
+.footer_logo {
+    width: 68px;
+    -webkit-transform: translateY(9px) rotate(-9deg);
+    -ms-transform: translateY(9px) rotate(-9deg);
+    transform: translateY(9px) rotate(-9deg);
+    opacity: .8;
+    padding-bottom: 15px;
+}
+
+.footer_address {
+    font-size: 1.8rem;
+}
+
+.english_address {
+    font-size: 1.6rem;
+}
+
+.footer_address a {
+    color: #707070;
+}
+
+.copyright {
+    font-size: 1.6rem;
+}
+
+.english_address {
+    align-items: flex-end;
+}
+
+.footer_bottomwp {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer_sns_wp {
+    width: 100px;
+}
+
+.f_logo_Black {
+    margin-right: 20px;
+    width: 40px;
+}
+
+.insta_logo_black {
+    width: 40px;
+}
+
+/*コピーライト*/
+.copyright {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*
+ページトップPC
+.footer_wrap {
+    position: relative;
+}
+
+#page_top a {
+    display: block;
+}
+
+#page_top a::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f062';
+    font-size: 3rem;
+    color: #2699d6;
+    position: absolute;
+    top: 3%;
+    right: 50%;
+    left: 45%;
+}
+*/
+
+@media screen and (max-width:1024px) {
+    .header_wp {
+        padding: 0 36px;
+    }
+    
+    .header_logo_wp {
+        width: 50%;
+    }
+    
+/*
+    .gnav {
+        width: 50%;
+    }
+    
+    .gnav ul li {
+        width: 25%;
+    }
+*/
+    
+}
+
+@media screen and (max-width:767px) {
+    /*ヘッダーSP
+    --------------------------------------------------*/
+    .gnav {
+        display: none;
+    }
+
+    .header_logo_wp {
+        width: 85%;
+    }
+
+    /*    右のボックス*/
+    .header_logo_wp_right {
+/*        width: 15%;*/
+        display: flex;   
+    }
+
+    .header_logo {
+        width: 48px;
+    }
+
+    .header_logo img {
+        vertical-align: baseline;
+    }
+
+    .header_wp {
+        padding: 0;
+    }
+
+    /*フッターSP
+    --------------------------------------------------*/
+    
+    .footer {
+        padding-bottom: 20px;
+    }
+    
+    .footer_logo_wp {
+        margin-left: 0;
+    }
+
+    .footer_logotx a {
+        font-size: 24px
+    }
+    
+    .footer_bottomwp {
+        display: block;
+    }
+    
+    .footer_sns_wp {
+        margin: 0 auto;
+        padding: 40px 0 5px;
+    }
+    
+    .footer_address {
+        margin-left: 10px;
+    }
+
+    .english_address {
+        margin-left: 10px;
+    }
+    
+    .copyright {
+        font-size: 1.4rem;
+    }
+
+}
