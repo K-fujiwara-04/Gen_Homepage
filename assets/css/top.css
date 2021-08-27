@@ -2,10 +2,10 @@
 
 /*メインビジュアル*/
 .topmv {
-    background: url(../image/top/mv.jpg) no-repeat center center;
+    background: url(../image/top/home_index.jpg) no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 880px;
+    height: 500px;
 }
 
 .second_bg {
@@ -15,8 +15,9 @@
 
 /*キャッチコピーPC*/
 .catch_copy {
-    font-size: 2.6rem;
+    font-size: 50px;
     text-align: center;
+    font-family: serif;
 }
 
 .second_catch {
@@ -121,7 +122,7 @@
 
     .topmv {
         background: url(../image/top/mv_sp.JPG) no-repeat center center !important;
-        height: 580px;
+        height: 200px;
 /*        object-fit: cover;*/
 /*        background-size: contain;*/
     }
